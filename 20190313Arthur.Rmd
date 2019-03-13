@@ -8,4 +8,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-444444
+```{r}
+777777->arthur
+Arthur<-666666
+
+```
+
+```{r}
+arthur+Arthur
+```
+
