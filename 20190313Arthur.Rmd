@@ -35,3 +35,16 @@ class(a)
 class(a87)
 ```
 
+```{r}
+aVector<-c(5,6,7)
+a2Vector<-c(5L,6L,7L)
+```
+
+```{r}
+class(aVector)
+```
+
+```{r}
+class(a2Vector)
+```
+
