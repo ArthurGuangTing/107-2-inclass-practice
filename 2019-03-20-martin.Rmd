@@ -35,4 +35,21 @@ sum(aLogical)
 sum(xLogical)
 ```
 
+```{r}
+studentMajors <- factor(
+  c("經濟系", "經濟系", "法律系")
+)
+```
+
+```{r}
+typeof(studentMajors)
+```
+```{r}
+birthplace <- factor(
+  c("台北市", "台北市", "台中市","台中市","台中市")
+)
+typeof(birthplace)
+levels(birthplace)
+as.integer(birthplace)
+```
 
