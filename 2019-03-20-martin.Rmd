@@ -53,3 +53,14 @@ levels(birthplace)
 as.integer(birthplace)
 ```
 
+```{r}
+stringInteger <- c("1","2","-11")
+class(stringInteger) # 無法進行數值運算
+trueInteger <- as.integer(stringInteger)
+class(trueInteger) # 可以進行數值運算
+```
+```{r}
+stringInteger
+trueInteger
+```
+
