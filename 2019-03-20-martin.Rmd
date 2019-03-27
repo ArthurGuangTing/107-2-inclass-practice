@@ -116,6 +116,40 @@ test
 as.integer(test)
 as.integer(Google)
 ```
+```{r}
+a <- c(1, 5, -3)
+b <- c(0.5, 12, 2)
+aL <- c(1L, 5L, -3L)
+bL <- c(-2L, -4L, 8L)
+class(a+bL)
+class(aL+bL)
+class(a*bL)
+class(a-bL)
+class(aL*bL)
+class(aL-bL)
+```
+```{r}
+a+4
+aL+4
+class(aL+4L)
+```
+```{r}
+a^b
+a %% b
+```
+```{r}
+startingDate <- ymd("2000-02-17")
+startingDate + years(1)
+startingDate + dyears(1)
+```
+```{r}
+ymd("2000-02-01") -> startingDate
+ymd("2019-08-11") -> endingDate
+endingDate - startingDate
+```
+```{r}
+test+86400
+```
 
 
 
