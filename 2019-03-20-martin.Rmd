@@ -102,5 +102,20 @@ typeof(nowtwDateTime)
 as.double(nowtwDateTime)
 as.double(nowTokyoDateTime)
 ```
+```{r}
+Google <- mdy_hms("3/14/2019 8:18:47", tz="Asia/Taipei")
+Google
+typeof(Google)
+as.double(Google)
+```
+```{r}
+test <- mdy("March 3,2019", tz="Asia/Taipei")
+test
+```
+```{r}
+as.integer(test)
+as.integer(Google)
+```
+
 
 
