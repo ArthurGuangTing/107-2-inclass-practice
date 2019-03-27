@@ -93,10 +93,14 @@ LisbonDateTime
 ```{r}
 nowtwDateTime <- ymd_hms("2019-03-27 15:32:00", tz="Asia/Taipei")
 nowtwDateTime
-```
-
-```{r}
 nowTokyoDateTime <- with_tz(nowtwDateTime,tzone="Asia/Tokyo")
 nowTokyoDateTime
 ```
+```{r}
+class(nowtwDateTime)
+typeof(nowtwDateTime)
+as.double(nowtwDateTime)
+as.double(nowTokyoDateTime)
+```
+
 
