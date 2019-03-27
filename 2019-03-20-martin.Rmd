@@ -82,3 +82,21 @@ as.integer(dtObject)
 Sys.timezone()
 ```
 
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+twDateTime
+```
+```{r}
+LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
+LisbonDateTime
+```
+```{r}
+nowtwDateTime <- ymd_hms("2019-03-27 15:32:00", tz="Asia/Taipei")
+nowtwDateTime
+```
+
+```{r}
+nowTokyoDateTime <- with_tz(nowtwDateTime,tzone="Asia/Tokyo")
+nowTokyoDateTime
+```
+
