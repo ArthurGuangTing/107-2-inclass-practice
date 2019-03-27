@@ -187,6 +187,9 @@ sum(x2)
 sum(x2, na.rm=T)
 sum(x2, na.rm = F)
 ```
+```{r}
+0/0
+```
 
 
 
