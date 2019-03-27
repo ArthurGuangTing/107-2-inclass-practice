@@ -149,6 +149,21 @@ endingDate - startingDate
 ```
 ```{r}
 test+86400
+class(test+86400)
+```
+```{r}
+test+seconds(24)
+```
+```{r}
+x <- 5
+y <- 7
+x2 <- c(1,5,10)
+y2 <- c(-1,5,20)
+x>y
+x<y
+x>=y
+x<=y
+x==y
 ```
 
 
