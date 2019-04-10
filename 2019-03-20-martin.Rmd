@@ -191,5 +191,15 @@ sum(x2, na.rm = F)
 0/0
 ```
 
+```{r}
+library(stringr)
+```
+
+```{r}
+course <- c("個體經濟學","投資學","總體經濟學")
+course
+str_subset(course,"經濟學")
+str_detect(course,"經濟學")
+```
 
 
