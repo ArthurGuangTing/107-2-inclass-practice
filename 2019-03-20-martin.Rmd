@@ -210,4 +210,21 @@ str_sub(studentID,2,4)
 
 ```
 
+```{r}
+month <- c("3","4","2")
+day <- c("11","5","7")
+char1 <- c("月","月","月")
+char2 <- c("日","日","日")
+month
+char1
+day 
+char2
+str_c(month,char1,day,char2)
+```
+
+```{r}
+month
+day
+str_c(month,day, sep="-")
+```
 
