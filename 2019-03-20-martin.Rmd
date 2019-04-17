@@ -351,3 +351,13 @@ class(extract1)
 class(extract2)
 ```
 
+```{r}
+length(plasticContainer)
+plasticContainer[c(T,F,T)]
+```
+
+```{r}
+成績單
+成績單[c(FALSE,TRUE,TRUE)]
+```
+
