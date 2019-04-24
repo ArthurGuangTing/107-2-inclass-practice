@@ -517,3 +517,8 @@ classSurvey[c(1:60),c(4,5)]
 classSurvey[,c(4,5)]
 ```
 
+```{r}
+a <- classSurvey[["性別"]]=="女"
+classSurvey[a,c(4,5)]
+```
+
