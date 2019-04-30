@@ -4,6 +4,14 @@ author: ""
 date: "3/20/2019"
 output: html_document
 ---
+```{r}
+aVector<-c(5,6,7)
+a2Vector<-c(5L,6L,7L)
+a<-5
+a2<-5L
+class(a2)
+```
+
 
 ```{r}
 dialogue <- c('小明說："明天不用上課。"',
@@ -39,10 +47,12 @@ sum(xLogical)
 studentMajors <- factor(
   c("經濟系", "經濟系", "法律系")
 )
+studentMajors
 ```
 
 ```{r}
 typeof(studentMajors)
+levels(studentMajors)
 ```
 ```{r}
 birthplace <- factor(
@@ -75,7 +85,7 @@ dtObjectVector<-ymd_hms(
 ```{r}
 class(dtObject)
 typeof(dtObject)
-levels(dtObject)
+levels(dtObjectVector)
 as.integer(dtObject)
 ```
 ```{r}
@@ -141,11 +151,13 @@ a %% b
 startingDate <- ymd("2000-02-17")
 startingDate + years(1)
 startingDate + dyears(1)
+class(startingDate + years(1))
 ```
 ```{r}
 ymd("2000-02-01") -> startingDate
 ymd("2019-08-11") -> endingDate
 endingDate - startingDate
+class(endingDate - startingDate)
 ```
 ```{r}
 test+86400
@@ -164,6 +176,7 @@ x<y
 x>=y
 x<=y
 x==y
+x>x2
 ```
 ```{r}
 x4 <- c(1,5,8)
@@ -189,6 +202,34 @@ sum(x2, na.rm = F)
 ```
 ```{r}
 0/0
+```
+```{r}
+x5 <- c("台北市","新北市","高雄市")
+greatTaipei <- c("台北市","新北市")
+
+x5 %in% greatTaipei
+!(x5 %in% greatTaipei)
+```
+```{r}
+y5 <- c("女","男","女")
+
+y5
+y5=="女"
+!(y5=="女")
+```
+```{r}
+(x5 %in% greatTaipei) & (y5=="女")
+```
+```{r}
+(x5 %in% greatTaipei) | (y5=="女")
+```
+```{r}
+xor(x5 %in% greatTaipei, y5=="女")
+```
+```{r}
+y5
+(y5 == "女")
+which(y5=="女")
 ```
 
 ```{r}
@@ -220,12 +261,16 @@ char1
 day 
 char2
 str_c(month,char1,day,char2)
+
+str_c(month,c("月"),day,c("日"))
+str_c(month,"月",day,"日")
 ```
 
 ```{r}
 month
 day
 str_c(month,day, sep="-")
+str_c(month,day, sep="/")
 ```
 
 ```{r}
@@ -274,12 +319,15 @@ str_c(d,b)
 ```
 
 ```{r}
+a<-c(1:3)
+typeof(a)
+a
 aWithNames <- c(
   a1=1,
   a2=2,
   a3=3
 )
-typeof(a)
+typeof(aWithNames)
 aWithNames
 ```
 
@@ -317,6 +365,7 @@ plasticContainer[["greenBox"]][[1]]
 )
 成績單[["個經"]]
 成績單[[1]]
+class(成績單)
 ```
 
 ```{r}
