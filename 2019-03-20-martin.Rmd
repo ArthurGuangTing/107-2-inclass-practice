@@ -792,3 +792,12 @@ yyyymmdd <- ymd(str_c(yyyy,mm,"01",sep="-"))
 date_convert_twYM(twDates)
 ```
 
+```{r}
+date_convert_twYM <- function(TWd,cdate="01"){
+  yyyy<-as.integer(str_extract(TWd,"(?<=(民國))[:digit:]+"))+1911
+mm<-str_extract(TWd,"[:digit:]+(?=月)")
+yyyymmdd <- ymd(str_c(yyyy,mm,cdate,sep="-"))
+                return(yyyymmdd)}
+date_convert_twYM(twDates,"02")
+```
+
